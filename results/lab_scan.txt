@@ -1,0 +1,45 @@
+
+### good
+https://localhost:39829/  grade A (100/100)  {'version': 'TLSv1.3', 'cipher': 'TLS_AES_256_GCM_SHA384', 'cert_days_left': 29, 'tls1_3': True}
+
+### bad_tls
+https://localhost:43491/  grade F (0/100)  {'tls1_3': False}
+  [HIGH    ] HSTS            Strict-Transport-Security missing
+  [HIGH    ] CORS            ACAO * with credentials
+  [HIGH    ] COOKIE_SECURE   cookie 'PHPSESSID' lacks Secure  (PHPSESSID=abc; Path=/)
+  [HIGH    ] COOKIE_HTTPONLY session cookie 'PHPSESSID' lacks HttpOnly  (PHPSESSID=abc; Path=/)
+  [HIGH    ] COOKIE_SAMESITE cookie 'tracking' SameSite=None without Secure  (tracking=1; SameSite=None)
+  [HIGH    ] TLS_CERT        self-signed / untrusted certificate  (self-signed certificate)
+  [HIGH    ] TLS_PROTO       server accepts deprecated TLSv1.0
+  [HIGH    ] TLS_PROTO       server accepts deprecated TLSv1.1
+  [MEDIUM  ] CSP             CSP allows 'unsafe-inline' scripts  (default-src * 'unsafe-inline')
+  [MEDIUM  ] CSP             CSP wildcard source  (default-src * 'unsafe-inline')
+  [MEDIUM  ] CLICKJACK       No X-Frame-Options or CSP frame-ancestors
+  [MEDIUM  ] COOKIE_SECURE   cookie 'tracking' lacks Secure  (tracking=1; SameSite=None)
+  [LOW     ] NOSNIFF         X-Content-Type-Options: nosniff missing
+  [LOW     ] REFERRER        Referrer-Policy missing
+  [LOW     ] DISCLOSURE      server header discloses version  (Apache/2.2.15 (CentOS))
+  [LOW     ] DISCLOSURE      x-powered-by header discloses version  (PHP/5.4.16)
+  [LOW     ] COOKIE_SAMESITE cookie 'PHPSESSID' has no SameSite  (PHPSESSID=abc; Path=/)
+  [INFO    ] TLS_PROTO       TLS 1.3 not supported
+
+### expired
+https://localhost:39003/  grade F (39/100)  {'tls1_3': True}
+  [CRITICAL] TLS_CERT        certificate expired  (certificate has expired)
+
+### plain
+http://localhost:42685/  grade F (0/100)  
+  [HIGH    ] CORS            ACAO * with credentials
+  [HIGH    ] COOKIE_SECURE   cookie 'PHPSESSID' lacks Secure  (PHPSESSID=abc; Path=/)
+  [HIGH    ] COOKIE_HTTPONLY session cookie 'PHPSESSID' lacks HttpOnly  (PHPSESSID=abc; Path=/)
+  [HIGH    ] COOKIE_SAMESITE cookie 'tracking' SameSite=None without Secure  (tracking=1; SameSite=None)
+  [HIGH    ] NO_TLS          site served over plain HTTP
+  [MEDIUM  ] CSP             CSP allows 'unsafe-inline' scripts  (default-src * 'unsafe-inline')
+  [MEDIUM  ] CSP             CSP wildcard source  (default-src * 'unsafe-inline')
+  [MEDIUM  ] CLICKJACK       No X-Frame-Options or CSP frame-ancestors
+  [MEDIUM  ] COOKIE_SECURE   cookie 'tracking' lacks Secure  (tracking=1; SameSite=None)
+  [LOW     ] NOSNIFF         X-Content-Type-Options: nosniff missing
+  [LOW     ] REFERRER        Referrer-Policy missing
+  [LOW     ] DISCLOSURE      server header discloses version  (Apache/2.2.15 (CentOS))
+  [LOW     ] DISCLOSURE      x-powered-by header discloses version  (PHP/5.4.16)
+  [LOW     ] COOKIE_SAMESITE cookie 'PHPSESSID' has no SameSite  (PHPSESSID=abc; Path=/)

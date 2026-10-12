@@ -1,0 +1,3 @@
+### secure-shortener (my project 5, live uvicorn on :8088, HTTP only in lab)
+http://127.0.0.1:8088/x  grade B (85/100)  
+  [HIGH    ] NO_TLS          site served over plain HTTP
