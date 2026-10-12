@@ -1,0 +1,2 @@
+pytest>=8
+cryptography>=42  # only used if OpenSSL < 3.4
