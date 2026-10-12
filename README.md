@@ -1,5 +1,7 @@
 # webvuln-scanner: CLI for security headers, cookies and TLS
 
+[![CI](https://github.com/hustlerx01/webvuln-scanner/actions/workflows/ci.yml/badge.svg)](https://github.com/hustlerx01/webvuln-scanner/actions/workflows/ci.yml)
+
 > **Lab project.** It's only tested against local lab servers I wrote (`testserver/`) and my own `secure-shortener`. Scan only sites you own or are authorised to test. Stdlib-only scanner.
 
 ## Problem
